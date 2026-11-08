@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Villa HQ — Jembatan Medsos Live Auto-Sync (Nadia & Tim)",
+  "version": "2.0.0",
+  "description": "Auto-Sync real-time metrik, judul konten & komentar terbaru dari tab Instagram, TikTok, YouTube Studio, Meta Ads & Shopee langsung ke 11 Spesialis AI di Villa HQ.",
+  "permissions": ["activeTab", "tabs", "scripting", "alarms"],
+  "host_permissions": [
+    "http://127.0.0.1:3001/*",
+    "http://localhost:3001/*",
+    "http://localhost:5173/*",
+    "http://127.0.0.1:5173/*",
+    "https://*.instagram.com/*",
+    "https://*.tiktok.com/*",
+    "https://*.youtube.com/*",
+    "https://*.facebook.com/*",
+    "https://*.shopee.co.id/*",
+    "https://*.tokopedia.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Villa HQ Medsos Live Auto-Sync",
+    "default_popup": "popup.html"
+  }
+}

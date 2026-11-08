@@ -1,0 +1,26 @@
+# Runtime data
+data/config.secret.json
+data/notion.secret.json
+data/state.json
+data/uploads/
+hermes_workspace/
+browser_profile/
+chrome_profiles/
+
+# Secrets
+*.secret.json
+.env
+.env.*
+
+# Dependencies
+node_modules/
+.npm-cache/
+
+# Build
+dist/
+.next/
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
